@@ -339,6 +339,29 @@ body {
     margin-bottom: 16px;
 }
 
+/* Summary Table */
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.95rem;
+}
+.summary-table td {
+    border: 1px solid var(--border-light);
+    padding: 8px 12px;
+}
+.summary-table tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+.highlight-box {
+    background-color: rgba(56, 189, 248, 0.1);
+    border-left: 4px solid var(--primary-color);
+    padding: 16px;
+    margin-top: 24px;
+    font-weight: 600;
+    color: #0F172A;
+}
+
 .lesson-footer {
     padding: var(--spacing-md) var(--spacing-lg);
     border-top: 1px solid var(--border-light);

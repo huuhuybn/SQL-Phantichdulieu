@@ -3,6 +3,95 @@ const courseData = {
     description: "Tài liệu hướng dẫn chi tiết dành cho Giảng viên. Cấu trúc 2 tiếng/buổi (1h Lý thuyết + 1h Thực hành).",
     modules: [
         {
+            id: "mod0",
+            title: "Module 0: Giới thiệu Môn học",
+            summary: "Bản chất và Mục tiêu của khóa học DA101.",
+            sessions: [
+                {
+                    id: "s0",
+                    title: "BẢN CHẤT MÔN HỌC DA101: HỖ TRỢ HỌC VIÊN LÀM GÌ?",
+                    content: `
+                        <div class="lesson-plan">
+                            <h3>BẢN CHẤT MÔN HỌC DA101</h3>
+                            <p><em>"Môn học này KHÔNG dạy học viên trở thành 'coder' hay 'data scientist', mà hỗ trợ – hướng dẫn học viên làm đúng vai trò của **Data Analyst** trong doanh nghiệp."</em></p>
+                            
+                            <div class="time-block">
+                                <strong>1. Hướng dẫn làm việc với dữ liệu để ra quyết định</strong>
+                                <p>👉 Không phải học thuật, mà là giải bài toán thực tế.</p>
+                                <ul>
+                                    <li>Nhận yêu cầu: Doanh thu giảm? Khách hàng rời bỏ?</li>
+                                    <li>Chuyển thành câu hỏi dữ liệu.</li>
+                                    <li>Tìm dữ liệu trả lời. => <em>"Dữ liệu này giúp quyết định gì?"</em></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="time-block">
+                                <strong>2. Hướng dẫn thu thập – chuẩn bị dữ liệu (70% công việc)</strong>
+                                <p>Không có dữ liệu sạch → không có phân tích.</p>
+                                <ul>
+                                    <li>Lấy data: SQL, CSV, Excel, JSON.</li>
+                                    <li>Cleaning: Xử lý Null, Duplicate, Chuẩn hóa format.</li>
+                                    <li>Ghép dữ liệu nhiều nguồn.</li>
+                                </ul>
+                            </div>
+
+                            <div class="time-block">
+                                <strong>3. Hướng dẫn phân tích dữ liệu chứ không “code cho vui”</strong>
+                                <p>Python & SQL dùng để:</p>
+                                <ul>
+                                    <li>Tính chỉ số kinh doanh.</li>
+                                    <li>Phát hiện Xu hướng, Bất thường, Mối quan hệ.</li>
+                                    <li>Trả lời: "Vì sao?", "Cái gì ảnh hưởng nhất?".</li>
+                                </ul>
+                                <p>🚫 <strong>KHÔNG dạy:</strong> Thuật toán phức tạp, Deep Learning, Tối ưu mô hình.</p>
+                            </div>
+
+                            <div class="time-block">
+                                <strong>4. Hướng dẫn trực quan hóa & kể chuyện (Storytelling)</strong>
+                                <ul>
+                                    <li>Chọn biểu đồ đúng.</li>
+                                    <li>Xây dựng Dashboard Power BI: Người không biết data vẫn hiểu, Sếp nhìn là ra quyết định.</li>
+                                </ul>
+                            </div>
+
+                            <div class="time-block">
+                                <strong>5. Làm dự án như doanh nghiệp & 6. Đóng vai Data Analyst</strong>
+                                <ul>
+                                    <li>Mỗi module đều có bài toán thực tế & Dataset thật.</li>
+                                    <li>Sản phẩm: Dashboard, Báo cáo, Code -> <strong>Portfolio xin việc</strong>.</li>
+                                    <li>Role-play: Nhận yêu cầu -> Phân tích -> Bảo vệ kết luận.</li>
+                                </ul>
+                            </div>
+
+                            <div class="time-block">
+                                <strong>🔍 TÓM LẠI: MÔN HỌC NÀY HỖ TRỢ HỌC VIÊN</strong>
+                                <table class="summary-table">
+                                    <tr><td>Hiểu vai trò Data Analyst</td><td>✅ Có</td></tr>
+                                    <tr><td>Làm sạch & chuẩn bị dữ liệu</td><td>✅ Có</td></tr>
+                                    <tr><td>Phân tích phục vụ quyết định</td><td>✅ Có</td></tr>
+                                    <tr><td>Làm dashboard & báo cáo</td><td>✅ Có</td></tr>
+                                    <tr><td>Có portfolio đi xin việc</td><td>✅ Có</td></tr>
+                                    <tr><td>Thành Data Scientist</td><td>❌ Không</td></tr>
+                                    <tr><td>Code backend / web</td><td>❌ Không</td></tr>
+                                    <tr><td>Học ML/AI chuyên sâu</td><td>❌ Không</td></tr>
+                                </table>
+                                <div class="highlight-box">🎯 DA101 là môn học “dẫn học viên từ số 0 đến mức làm được việc của Data Analyst junior”</div>
+                            </div>
+                        </div>
+                    `,
+                    exercises: `
+                         <div class="lab-guide">
+                            <h4>THẢO LUẬN ĐẦU KHÓA</h4>
+                            <div class="task-block">
+                                <strong>Câu hỏi thảo luận:</strong>
+                                <p>Theo bạn, kỹ năng nào quan trọng nhất của DA: Code giỏi, Toán giỏi hay Hiểu kinh doanh?</p>
+                            </div>
+                        </div>
+                    `
+                }
+            ]
+        },
+        {
             id: "mod1",
             title: "Module 1: Nền tảng Phân tích dữ liệu (8 Buổi)",
             summary: "Trang bị tư duy Data, quy trình phân tích và thành thạo Power BI cơ bản.",
