@@ -1,0 +1,31 @@
+:root {
+    /* Colors */
+    --primary-color: #2D3E50; /* Deep Blue/Gray */
+    --primary-light: #4A637B;
+    --accent-color: #E67E22; /* Carrot Orange for Highlighting */
+    --accent-hover: #D35400;
+    
+    --bg-body: #F4F7F6;
+    --bg-sidebar: #1E293B;
+    --bg-white: #FFFFFF;
+    
+    --text-main: #333333;
+    --text-muted: #666666;
+    --text-light: #ECEFF1;
+    --text-white: #FFFFFF;
+    
+    --border-color: #E0E0E0;
+    --border-light: #F0F0F0;
+    
+    --success-color: #27AE60;
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    
+    /* Transitions */
+    --trans-fast: 0.2s ease;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis Course - CodeGym</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>CodeGym DA</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-info">
+                        <span>Hoàn thành</span>
+                        <span id="progress-text">0%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-tree" id="course-tree">
+                <!-- Javascript will populate this -->
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-nav">
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <h2 id="course-title">Chuyên viên Phân tích dữ liệu</h2>
+                <div class="user-profile">
+                    <div class="avatar">DA</div>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <div class="lesson-player">
+                    <div class="lesson-header">
+                        <h1 id="lesson-title">Chào mừng bạn đến với khóa học</h1>
+                        <div class="lesson-actions">
+                            <button class="btn-complete" id="btn-complete">
+                                <i class="fa-regular fa-circle-check"></i> Đánh dấu hoàn thành
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="lesson-body">
+                        <!-- Tabs -->
+                        <div class="tabs">
+                            <button class="tab-btn active" data-tab="theory">Lý thuyết</button>
+                            <button class="tab-btn" data-tab="exercise">Bài tập & Thực hành</button>
+                        </div>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content active" id="tab-theory">
+                            <div class="content-placeholder">
+                                <i class="fa-solid fa-book-open"></i>
+                                <p>Chọn một bài học bên trái để bắt đầu.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="tab-exercise">
+                            <div class="content-placeholder">
+                                <i class="fa-solid fa-code"></i>
+                                <p>Bài tập sẽ hiện ở đây.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lesson-footer">
+                        <button class="nav-btn prev" id="btn-prev" disabled>
+                            <i class="fa-solid fa-arrow-left"></i> Bài trước
+                        </button>
+                        <button class="nav-btn next" id="btn-next" disabled>
+                            Bài tiếp <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
