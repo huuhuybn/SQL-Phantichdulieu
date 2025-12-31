@@ -183,7 +183,9 @@ body {
     padding: var(--spacing-lg);
     display: flex;
     justify-content: center;
+    align-items: flex-start; /* Fix: Prevent forcing height, allow growth */
 }
+
 
 .lesson-player {
     max-width: 900px;
@@ -194,6 +196,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 500px;
+    height: auto; /* Ensure it grows */
 }
 
 .lesson-header {
@@ -255,7 +258,7 @@ body {
 }
 
 .lesson-body {
-    flex: 1;
+    flex: 1 1 auto; /* Fix: Allow growing with content */
     display: flex;
     flex-direction: column;
 }
@@ -263,7 +266,7 @@ body {
 .tab-content {
     display: none;
     padding: var(--spacing-lg);
-    flex: 1;
+    flex: 1 1 auto; /* Fix: Allow growing with content */
 }
 .tab-content.active {
     display: block;
