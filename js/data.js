@@ -552,9 +552,11 @@ const courseData = {
                             </div>
                         </div>
                     `
-                },
-                // MODULE 2: SQL - Lesson Plans
-                 {
+                }
+            ]
+        },
+        // MODULE 2: SQL - Lesson Plans
+        {
                     id: "mod2",
                     title: "Module 2: SQL trong Phân tích dữ liệu (6 Buổi)",
                     summary: "Làm chủ ngôn ngữ truy vấn dữ liệu SQL.",
