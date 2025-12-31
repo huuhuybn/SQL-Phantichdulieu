@@ -9,49 +9,82 @@ const courseData = {
             sessions: [
                 {
                     id: "s1",
-                    title: "Buổi 1: Tổng quan nghề Data Analyst",
+                    title: "Buổi 1: Tổng quan nghề Data Analyst & Ứng dụng AI",
                     content: `
                         <div class="lesson-plan">
                             <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
                             
                             <div class="time-block">
-                                <strong>00:00 - 15:00: Giới thiệu & Ice-breaker</strong>
+                                <strong>00:00 - 15:00: Data Analyst làm gì trong thực tế? (Đa ngành nghề)</strong>
+                                <p>DA không chỉ ngồi code, DA giải quyết bài toán kinh doanh. Ví dụ thực tế:</p>
                                 <ul>
-                                    <li>Giới thiệu giảng viên, làm quen học viên.</li>
-                                    <li><strong>Câu hỏi thảo luận:</strong> "Theo các bạn, Grab/Shopee, Facebook biết gì về bạn?"</li>
-                                    <li>Mục tiêu: Khơi gợi sự tò mò về dữ liệu.</li>
+                                    <li><strong>F&B (Highlands/Starbucks):</strong>
+                                        <ul>
+                                            <li><em>Vấn đề:</em> Doanh thu buổi sáng đông nhưng lãi thấp.</li>
+                                            <li><em>DA làm gì:</em> Phân tích hóa đơn, thấy 70% khách mua Cafe đều mua thêm bánh mì nếu giá giảm 10%. -> Đề xuất bán <strong>Combo Sáng</strong> để tăng giá trị đơn hàng (AOV).</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>E-commerce (Shopee/TikTok Shop):</strong>
+                                        <ul>
+                                            <li><em>Vấn đề:</em> Khách bỏ hàng vào giỏ nhưng không thanh toán (Cart Abandonment).</li>
+                                            <li><em>DA làm gì:</em> Gửi mã Freeship vào khung giờ vàng (12h trưa) cho nhóm này -> Tỷ lệ chốt đơn tăng 20%.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Ngân hàng (Banking - Tín dụng):</strong>
+                                        <ul>
+                                            <li><em>Vấn đề:</em> Cho vay ai để không bị "bùng"?</li>
+                                            <li><em>DA làm gì:</em> Xây dựng <strong>Credit Score</strong> (Chấm điểm uy tín) dựa trên lịch sử trả nợ, chi tiêu thẻ tín dụng, nơi ở.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Nhân sự (HR):</strong>
+                                        <ul>
+                                            <li><em>Vấn đề:</em> Nhân viên giỏi hay nghỉ việc.</li>
+                                            <li><em>DA làm gì:</em> Dự báo (Predict) ai sắp nghỉ việc dựa trên số ngày nghỉ phép tăng đột biến, thái độ làm việc -> HR can thiệp giữ người sớm.</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
 
                             <div class="time-block">
-                                <strong>15:00 - 30:00: Định nghĩa Data & Information</strong>
+                                <strong>15:00 - 30:00: Quy trình thu thập dữ liệu (Lấy Data ở đâu?)</strong>
                                 <ul>
-                                    <li><strong>Data (Dữ liệu):</strong> Sự kiện thô (Raw facts). <br><em>Ví dụ: Số "38" (Vô nghĩa).</em></li>
-                                    <li><strong>Information (Thông tin):</strong> Dữ liệu + Ngữ cảnh. <br><em>Ví dụ: "Nhiệt độ cơ thể là 38 độ C" (Bạn đang sốt).</em></li>
-                                    <li><strong>Knowledge (Tri thức):</strong> Thông tin + Kinh nghiệm. <br><em>Ví dụ: "Sốt 38 độ cần uống thuốc hạ sốt và nghỉ ngơi".</em></li>
-                                    <li><strong>Insight (Sự thật):</strong> Điều ẩn giấu giúp tạo giá trị. <br><em>Ví dụ: "Bệnh nhân thường sốt cao vào chiều tối" -> Tăng cường bác sĩ trực ca tối.</em></li>
+                                    <li><strong>1. Nguồn nội bộ (Internal - Có sẵn):</strong>
+                                        <ul>
+                                            <li>Hệ thống máy tính tiền (POS), phần mềm kế toán (MISA).</li>
+                                            <li>CRM (Quản lý khách hàng), ERP (Quản lý doanh nghiệp).</li>
+                                            <li>File Excel rời rạc của các phòng ban (Sales gửi về, Kho gửi về).</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>2. Nguồn bên ngoài (External - Phải đi tìm):</strong>
+                                        <ul>
+                                            <li><strong>Open Data (Miễn phí):</strong> Kaggle (kho dataset lớn nhất), Google Dataset Search, Tổng cục thống kê (GSO).</li>
+                                            <li><strong>Social Listening:</strong> Dùng tool (BuzzSumo, YouScan) để "nghe" xem dân mạng đang chửi hay khen thương hiệu mình trên Facebook.</li>
+                                            <li><strong>Web Scraping (Cào dữ liệu):</strong> Dùng tool (Instant Data Scraper) hoặc code Python để lấy giá bán của đối thủ trên web về so sánh.</li>
+                                            <li><strong>Survey (Khảo sát):</strong> Google Forms, Typeform.</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
 
                             <div class="time-block">
-                                <strong>30:00 - 45:00: Chân dung Data Analyst</strong>
+                                <strong>30:00 - 45:00: Data Analyst có cần biết AI không?</strong>
+                                <p><strong>Câu trả lời:</strong> BẮT BUỘC. "AI không thay thế bạn, nhưng người biết dùng AI sẽ thay thế bạn."</p>
                                 <ul>
-                                    <li><strong>Nhiệm vụ:</strong> Người kể chuyện bằng dữ liệu (Data Storyteller).</li>
-                                    <li><strong>3 Kỹ năng cứng:</strong> Excel/SQL (Lấy data), Python/R (Xử lý), Power BI/Tableau (Vẽ).</li>
-                                    <li><strong>1 Kỹ năng mềm:</strong> Tư duy phản biện (Critical Thinking). Tại sao doanh số giảm? Có phải do giá cao không? Hay do hàng kém?</li>
+                                    <li><strong>ChatGPT/Claude để làm gì?</strong>
+                                        <ul>
+                                            <li><em>Viết Code:</em> "Viết cho tôi câu lệnh SQL lấy top 10 khách hàng chi tiêu nhiều nhất". (Giảm 80% thời gian gõ code).</li>
+                                            <li><em>Giải thích lỗi:</em> Copy lỗi dán vào, AI chỉ cách sửa ngay lập tức.</li>
+                                            <li><em>Brainstorm:</em> "Tôi có data bán hàng, hãy gợi ý 5 góc nhìn phân tích thú vị?".</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Github Copilot:</strong> Trợ lý code tự động điền code cho bạn.</li>
+                                    <li><strong>ChatGPT Advanced Data Analysis:</strong> Upload file Excel lên, bảo AI "Vẽ biểu đồ xu hướng doanh thu" -> Nó làm hết trong 30s.</li>
                                 </ul>
                             </div>
 
                             <div class="time-block">
                                 <strong>45:00 - 60:00: Quy trình 6 bước (Google Data Analytics)</strong>
-                                <ol>
-                                    <li><strong>Ask:</strong> Đặt vấn đề.</li>
-                                    <li><strong>Prepare:</strong> Chuẩn bị dữ liệu.</li>
-                                    <li><strong>Process:</strong> Làm sạch.</li>
-                                    <li><strong>Analyze:</strong> Phân tích.</li>
-                                    <li><strong>Share:</strong> Trình bày.</li>
-                                    <li><strong>Act:</strong> Hành động.</li>
-                                </ol>
+                                <p>Nhắc lại quy trình chuẩn: Ask -> Prepare -> Process -> Analyze -> Share -> Act.</p>
                             </div>
                         </div>
                     `,
@@ -60,29 +93,28 @@ const courseData = {
                             <h4>BÀI TẬP THỰC HÀNH (60 PHÚT)</h4>
                             
                             <div class="task-block">
-                                <strong>Bài 1: Tư duy đặt câu hỏi (Ask) - 20 phút</strong>
-                                <p><strong>Tình huống:</strong> Bạn là DA của chuỗi trà sữa "Toocha". Doanh số tháng này giảm 30%.</p>
-                                <p><strong>Yêu cầu:</strong> Chia lớp thành các nhóm 3 người. Liệt kê 5 giả thuyết (Hypothesis) nguyên nhân giảm?</p>
-                                <p><em>Gợi ý:</em></p>
+                                <strong>Bài 1: Sử dụng AI để lập kế hoạch (20 phút)</strong>
+                                <p><strong>Yêu cầu:</strong> Mở ChatGPT (hoặc Claude).</p>
+                                <p><strong>Prompt:</strong> "Đóng vai là một Chuyên viên phân tích dữ liệu cho chuỗi siêu thị. Hãy liệt kê 10 câu hỏi kinh doanh quan trọng nhất cần trả lời để tăng lợi nhuận cuối năm."</p>
+                                <p>-> Học viên chọn ra 3 câu hỏi hay nhất và thảo luận với lớp.</p>
+                            </div>
+
+                            <div class="task-block">
+                                <strong>Bài 2: Thực hành tìm kiếm Data (20 phút)</strong>
                                 <ul>
-                                    <li>Có phải đối thủ mở quán bên cạnh?</li>
-                                    <li>Có phải trời mưa nhiều?</li>
-                                    <li>Có phải nhân viên thái độ kém?</li>
+                                    <li>Truy cập <a href="https://www.kaggle.com/" target="_blank">Kaggle.com</a>.</li>
+                                    <li>Tìm kiếm từ khóa "E-commerce Sales" hoặc "Credit Card Fraud".</li>
+                                    <li>Tải xuống 1 file CSV bất kỳ và mở lên bằng Excel xem nó có những cột gì.</li>
                                 </ul>
                             </div>
 
                             <div class="task-block">
-                                <strong>Bài 2: Phân biệt Data vs Info (Worksheet) - 20 phút</strong>
-                                <p>Giảng viên phát một bảng dữ liệu Excel (Raw). Yêu cầu học viên trích xuất 3 thông tin có nghĩa từ đó.</p>
-                                <p><em>Dataset: Danh sách điểm thi của lớp (Tên, Toán, Lý, Hóa).</em></p>
-                                <p>Output mong muốn: "Bạn A cao điểm nhất", "Môn Hóa có điểm trung bình thấp nhất".</p>
-                            </div>
-
-                            <div class="task-block">
-                                <strong>Bài 3: Cài đặt công cụ - 20 phút</strong>
+                                <strong>Bài 3: Tư duy đặt vấn đề (Ask) (20 phút)</strong>
+                                <p>Từ file dữ liệu vừa tải về (ví dụ file E-commerce), hãy đặt 3 câu hỏi "Tại sao":</p>
                                 <ul>
-                                    <li>Hướng dẫn tải và cài đặt Power BI Desktop.</li>
-                                    <li>Đăng ký tài khoản Kaggle (để lấy dữ liệu mẫu).</li>
+                                    <li>Tại sao doanh thu tháng 2 thấp?</li>
+                                    <li>Tại sao khách hàng ở TP.HCM mua nhiều hơn Hà Nội?</li>
+                                    <li>Làm sao để biết mặt hàng nào đang tồn kho quá lâu?</li>
                                 </ul>
                             </div>
                         </div>
@@ -864,199 +896,193 @@ FROM rfm_stats;
                             `
                         }
                     ]
-                }
-                // ... Mod 3 & 4 can keep the simpler format or be expanded similarly if needed.
-                // For brevity in this artifact, I will keep Mod 3 & 4 concise but impactful, 
-                // assuming user is focused on teaching Mod 1 & 2 first. 
-                // But to be safe, I will apply basic Lesson Plan structure to Mod 3 too.
-            ]
-        },
-        {
-            id: "mod3", // Continued... I will add Mode 3 & 4 with lighter Lesson Plan structure to save space but maintain consistency
-            title: "Module 3: Python cho Phân tích dữ liệu (8 Buổi)",
-            summary: "Lập trình Python để tự động hóa và phân tích sâu.",
-            sessions: [
-                 {
-                    id: "s15",
-                    title: "Buổi 15: Làm quen Python & Jupyter Notebook",
-                    content: `
-                        <div class="lesson-plan">
-                            <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
-                            <ul>
-                                <li><strong>Môi trường:</strong> Hướng dẫn cài Anaconda / Google Colab (Tiện nhất cho lớp học).</li>
-                                <li><strong>Biến & Kiểu dữ liệu:</strong> String, Int, Float, Bool.</li>
-                                <li><strong>Print & Input:</strong> Tương tác cơ bản.</li>
-                            </ul>
-                        </div>
-                    `,
-                    exercises: `
-                        <div class="lab-guide">
-                            <h4>THỰC HÀNH</h4>
-                            <p>Bài 1: Viết chương trình "Máy tính tiền". Nhập vào số lượng, đơn giá -> In ra thành tiền.</p>
-                            <p>Bài 2: Viết chương trình đổi nhiệt độ C sang F.</p>
-                        </div>
-                    `
                 },
                 {
-                    id: "s16",
-                    title: "Buổi 16: List, Dictionary & Vòng lặp",
-                    content: `
-                        <div class="lesson-plan">
-                            <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
-                            <ul>
-                                <li><strong>List:</strong> <code>ds_hoc_vien = ['A', 'B', 'C']</code>. Truy cập index 0, 1, 2.</li>
-                                <li><strong>Dictionary:</strong> <code>thong_tin = {'ten': 'A', 'tuoi': 20}</code>.</li>
-                                <li><strong>For Loop:</strong> Duyệt qua danh sách.</li>
-                                <li><strong>If/Else:</strong> Điều kiện rẽ nhánh.</li>
-                            </ul>
-                        </div>
-                    `,
-                    exercises: `
-                        <div class="lab-guide">
-                            <h4>THỰC HÀNH</h4>
-                            <p>Bài 1: Cho một list điểm số. Dùng vòng lặp tính điểm trung bình và tìm điểm cao nhất.</p>
-                            <p>Bài 2: Đếm số lần xuất hiện của các từ trong một đoạn văn (Dùng Dictionary).</p>
-                        </div>
-                    `
+                    id: "mod3", // Continued... I will add Mode 3 & 4 with lighter Lesson Plan structure to save space but maintain consistency
+                    title: "Module 3: Python cho Phân tích dữ liệu (8 Buổi)",
+                    summary: "Lập trình Python để tự động hóa và phân tích sâu.",
+                    sessions: [
+                         {
+                            id: "s15",
+                            title: "Buổi 15: Làm quen Python & Jupyter Notebook",
+                            content: `
+                                <div class="lesson-plan">
+                                    <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
+                                    <ul>
+                                        <li><strong>Môi trường:</strong> Hướng dẫn cài Anaconda / Google Colab (Tiện nhất cho lớp học).</li>
+                                        <li><strong>Biến & Kiểu dữ liệu:</strong> String, Int, Float, Bool.</li>
+                                        <li><strong>Print & Input:</strong> Tương tác cơ bản.</li>
+                                    </ul>
+                                </div>
+                            `,
+                            exercises: `
+                                <div class="lab-guide">
+                                    <h4>THỰC HÀNH</h4>
+                                    <p>Bài 1: Viết chương trình "Máy tính tiền". Nhập vào số lượng, đơn giá -> In ra thành tiền.</p>
+                                    <p>Bài 2: Viết chương trình đổi nhiệt độ C sang F.</p>
+                                </div>
+                            `
+                        },
+                        {
+                            id: "s16",
+                            title: "Buổi 16: List, Dictionary & Vòng lặp",
+                            content: `
+                                <div class="lesson-plan">
+                                    <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
+                                    <ul>
+                                        <li><strong>List:</strong> <code>ds_hoc_vien = ['A', 'B', 'C']</code>. Truy cập index 0, 1, 2.</li>
+                                        <li><strong>Dictionary:</strong> <code>thong_tin = {'ten': 'A', 'tuoi': 20}</code>.</li>
+                                        <li><strong>For Loop:</strong> Duyệt qua danh sách.</li>
+                                        <li><strong>If/Else:</strong> Điều kiện rẽ nhánh.</li>
+                                    </ul>
+                                </div>
+                            `,
+                            exercises: `
+                                <div class="lab-guide">
+                                    <h4>THỰC HÀNH</h4>
+                                    <p>Bài 1: Cho một list điểm số. Dùng vòng lặp tính điểm trung bình và tìm điểm cao nhất.</p>
+                                    <p>Bài 2: Đếm số lần xuất hiện của các từ trong một đoạn văn (Dùng Dictionary).</p>
+                                </div>
+                            `
+                        },
+                        {
+                            id: "s17",
+                            title: "Buổi 17: Pandas - Data Analysis Library",
+                            content: `
+                                <div class="lesson-plan">
+                                    <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
+                                    <p>Giới thiệu thư viện quan trọng nhất của DA.</p>
+                                    <ul>
+                                        <li><code>import pandas as pd</code></li>
+                                        <li><code>pd.read_csv()</code>, <code>pd.read_excel()</code>.</li>
+                                        <li>DataFrame & Series.</li>
+                                        <li>Hàm <code>head(), info(), describe()</code>.</li>
+                                    </ul>
+                                </div>
+                            `,
+                            exercises: `
+                                <div class="lab-guide">
+                                    <h4>THỰC HÀNH</h4>
+                                    <p>Load file "IMDB-Movie-Data.csv".</p>
+                                    <ul>
+                                        <li>In ra 5 bộ phim doanh thu cao nhất.</li>
+                                        <li>Tính doanh thu trung bình của các bộ phim từ năm 2010-2016.</li>
+                                    </ul>
+                                </div>
+                            `
+                        },
+                         {
+                            id: "s18",
+                            title: "Buổi 18: Thao tác dữ liệu với Pandas",
+                            content: `
+                                <div class="lesson-plan">
+                                    <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
+                                    <ul>
+                                        <li><strong>Filtering:</strong> <code>df[df['col'] > 5]</code>.</li>
+                                        <li><strong>Grouping:</strong> <code>df.groupby('Category')['Sales'].sum()</code>.</li>
+                                        <li><strong>Missing Value:</strong> <code>fillna(), dropna()</code>.</li>
+                                    </ul>
+                                </div>
+                            `,
+                            exercises: `
+                                <div class="lab-guide">
+                                    <h4>THỰC HÀNH</h4>
+                                    <p>Dataset: Titanic Survival.</p>
+                                    <ul>
+                                        <li>Tỉ lệ sống sót của Nam và Nữ khác nhau thế nào? (Groupby Sex).</li>
+                                        <li>Lấp đầy tuổi bị thiếu bằng tuổi trung bình.</li>
+                                    </ul>
+                                </div>
+                            `
+                        },
+                         {
+                            id: "s19",
+                            title: "Buổi 19: Python Visualization",
+                            content: `
+                                <div class="lesson-plan">
+                                    <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
+                                    <ul>
+                                        <li><strong>Matplotlib:</strong> Vẽ cơ bản. <code>plt.plot()</code>.</li>
+                                        <li><strong>Seaborn:</strong> Vẽ thống kê đẹp. <code>sns.boxplot()</code>, <code>sns.heatmap()</code> (Vẽ ma trận tương quan).</li>
+                                    </ul>
+                                </div>
+                            `,
+                            exercises: `
+                                <div class="lab-guide">
+                                    <h4>THỰC HÀNH</h4>
+                                    <p>Vẽ biểu đồ phân phối (Histogram) độ tuổi hành khách Titanic.</p>
+                                    <p>Vẽ biểu đồ Boxplot so sánh giá vé giữa 3 hạng ghế (Pclass).</p>
+                                </div>
+                            `
+                        },
+                         {
+                            id: "s20",
+                            title: "Buổi 20: Kiểm định thống kê (Hypothesis Testing)",
+                            content: `
+                                <div class="lesson-plan">
+                                    <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
+                                    <ul>
+                                        <li>Quy trình kiểm định giả thuyết (Null Hypothesis).</li>
+                                        <li>T-test: So sánh trung bình 2 nhóm. (Vd: Điểm thi lớp A có cao hơn lớp B thực sự không?).</li>
+                                        <li>P-value: Ngưỡng 0.05.</li>
+                                    </ul>
+                                </div>
+                            `,
+                            exercises: `
+                                <div class="lab-guide">
+                                    <h4>THỰC HÀNH</h4>
+                                    <p>Dùng <code>scipy.stats</code> để kiểm định xem giá vé trung bình của Nam và Nữ trên tàu Titanic có khác biệt ý nghĩa thống kê không?</p>
+                                </div>
+                            `
+                        },
+                         {
+                            id: "s21",
+                            title: "Buổi 21: Machine Learning cơ bản (Regression)",
+                            content: `
+                                <div class="lesson-plan">
+                                    <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
+                                    <ul>
+                                        <li>Hồi quy tuyến tính (Linear Regression): Dự báo số lượng.</li>
+                                        <li>Chia tập Train/Test (70/30).</li>
+                                        <li>Thư viện <code>scikit-learn</code>.</li>
+                                    </ul>
+                                </div>
+                            `,
+                            exercises: `
+                                <div class="lab-guide">
+                                    <h4>THỰC HÀNH</h4>
+                                    <p>Dự báo giá nhà Boston (Dataset có sẵn của Sklearn).</p>
+                                    <ul>
+                                        <li>Input: Số phòng ngủ, diện tích.</li>
+                                        <li>Output: Giá nhà.</li>
+                                        <li>Đánh giá sai số (MSE).</li>
+                                    </ul>
+                                </div>
+                            `
+                        },
+                         {
+                            id: "s22",
+                            title: "Buổi 22: Dự án Module 3 (Python) ",
+                            content: `
+                                <div class="lesson-plan">
+                                    <h4>DỰ ÁN CUỐI MODULE (120 PHÚT)</h4>
+                                    <p><strong>Đề tài: Exploratory Data Analysis (EDA) on E-commerce Data.</strong></p>
+                                    <p>Yêu cầu thực hiện trọn vẹn trên Jupyter Notebook: Load -> Clean -> Analyze -> Visualize -> Conclusion.</p>
+                                </div>
+                            `,
+                            exercises: `
+                                <div class="lab-guide">
+                                    <h4>CHECKLIST</h4>
+                                    <ul>
+                                        <li>Code chạy không lỗi.</li>
+                                        <li>Có comment giải thích code.</li>
+                                        <li>Mỗi biểu đồ phải có nhận xét (Markdown text) bên dưới.</li>
+                                    </ul>
+                                </div>
+                            `
+                        }
+                    ]
                 },
-                {
-                    id: "s17",
-                    title: "Buổi 17: Pandas - Data Analysis Library",
-                    content: `
-                        <div class="lesson-plan">
-                            <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
-                            <p>Giới thiệu thư viện quan trọng nhất của DA.</p>
-                            <ul>
-                                <li><code>import pandas as pd</code></li>
-                                <li><code>pd.read_csv()</code>, <code>pd.read_excel()</code>.</li>
-                                <li>DataFrame & Series.</li>
-                                <li>Hàm <code>head(), info(), describe()</code>.</li>
-                            </ul>
-                        </div>
-                    `,
-                    exercises: `
-                        <div class="lab-guide">
-                            <h4>THỰC HÀNH</h4>
-                            <p>Load file "IMDB-Movie-Data.csv".</p>
-                            <ul>
-                                <li>In ra 5 bộ phim doanh thu cao nhất.</li>
-                                <li>Tính doanh thu trung bình của các bộ phim từ năm 2010-2016.</li>
-                            </ul>
-                        </div>
-                    `
-                },
-                 {
-                    id: "s18",
-                    title: "Buổi 18: Thao tác dữ liệu với Pandas",
-                    content: `
-                        <div class="lesson-plan">
-                            <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
-                            <ul>
-                                <li><strong>Filtering:</strong> <code>df[df['col'] > 5]</code>.</li>
-                                <li><strong>Grouping:</strong> <code>df.groupby('Category')['Sales'].sum()</code>.</li>
-                                <li><strong>Missing Value:</strong> <code>fillna(), dropna()</code>.</li>
-                            </ul>
-                        </div>
-                    `,
-                    exercises: `
-                        <div class="lab-guide">
-                            <h4>THỰC HÀNH</h4>
-                            <p>Dataset: Titanic Survival.</p>
-                            <ul>
-                                <li>Tỉ lệ sống sót của Nam và Nữ khác nhau thế nào? (Groupby Sex).</li>
-                                <li>Lấp đầy tuổi bị thiếu bằng tuổi trung bình.</li>
-                            </ul>
-                        </div>
-                    `
-                },
-                 {
-                    id: "s19",
-                    title: "Buổi 19: Python Visualization",
-                    content: `
-                        <div class="lesson-plan">
-                            <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
-                            <ul>
-                                <li><strong>Matplotlib:</strong> Vẽ cơ bản. <code>plt.plot()</code>.</li>
-                                <li><strong>Seaborn:</strong> Vẽ thống kê đẹp. <code>sns.boxplot()</code>, <code>sns.heatmap()</code> (Vẽ ma trận tương quan).</li>
-                            </ul>
-                        </div>
-                    `,
-                    exercises: `
-                        <div class="lab-guide">
-                            <h4>THỰC HÀNH</h4>
-                            <p>Vẽ biểu đồ phân phối (Histogram) độ tuổi hành khách Titanic.</p>
-                            <p>Vẽ biểu đồ Boxplot so sánh giá vé giữa 3 hạng ghế (Pclass).</p>
-                        </div>
-                    `
-                },
-                 {
-                    id: "s20",
-                    title: "Buổi 20: Kiểm định thống kê (Hypothesis Testing)",
-                    content: `
-                        <div class="lesson-plan">
-                            <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
-                            <ul>
-                                <li>Quy trình kiểm định giả thuyết (Null Hypothesis).</li>
-                                <li>T-test: So sánh trung bình 2 nhóm. (Vd: Điểm thi lớp A có cao hơn lớp B thực sự không?).</li>
-                                <li>P-value: Ngưỡng 0.05.</li>
-                            </ul>
-                        </div>
-                    `,
-                    exercises: `
-                        <div class="lab-guide">
-                            <h4>THỰC HÀNH</h4>
-                            <p>Dùng <code>scipy.stats</code> để kiểm định xem giá vé trung bình của Nam và Nữ trên tàu Titanic có khác biệt ý nghĩa thống kê không?</p>
-                        </div>
-                    `
-                },
-                 {
-                    id: "s21",
-                    title: "Buổi 21: Machine Learning cơ bản (Regression)",
-                    content: `
-                        <div class="lesson-plan">
-                            <h4>GIÁO ÁN LÝ THUYẾT (60 PHÚT)</h4>
-                            <ul>
-                                <li>Hồi quy tuyến tính (Linear Regression): Dự báo số lượng.</li>
-                                <li>Chia tập Train/Test (70/30).</li>
-                                <li>Thư viện <code>scikit-learn</code>.</li>
-                            </ul>
-                        </div>
-                    `,
-                    exercises: `
-                        <div class="lab-guide">
-                            <h4>THỰC HÀNH</h4>
-                            <p>Dự báo giá nhà Boston (Dataset có sẵn của Sklearn).</p>
-                            <ul>
-                                <li>Input: Số phòng ngủ, diện tích.</li>
-                                <li>Output: Giá nhà.</li>
-                                <li>Đánh giá sai số (MSE).</li>
-                            </ul>
-                        </div>
-                    `
-                },
-                 {
-                    id: "s22",
-                    title: "Buổi 22: Dự án Module 3 (Python) ",
-                    content: `
-                        <div class="lesson-plan">
-                            <h4>DỰ ÁN CUỐI MODULE (120 PHÚT)</h4>
-                            <p><strong>Đề tài: Exploratory Data Analysis (EDA) on E-commerce Data.</strong></p>
-                            <p>Yêu cầu thực hiện trọn vẹn trên Jupyter Notebook: Load -> Clean -> Analyze -> Visualize -> Conclusion.</p>
-                        </div>
-                    `,
-                    exercises: `
-                        <div class="lab-guide">
-                            <h4>CHECKLIST</h4>
-                            <ul>
-                                <li>Code chạy không lỗi.</li>
-                                <li>Có comment giải thích code.</li>
-                                <li>Mỗi biểu đồ phải có nhận xét (Markdown text) bên dưới.</li>
-                            </ul>
-                        </div>
-                    `
-                }
-            ]
-        },
         {
             id: "mod4",
             title: "Module 4: Sự nghiệp",
