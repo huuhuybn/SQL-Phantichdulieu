@@ -273,39 +273,56 @@ body {
 }
 
 /* Content Styling */
+/* Content Styling */
 .tab-content h3 {
-    margin-top: 24px;
-    margin-bottom: 12px;
-    font-size: 1.25rem;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 1.35rem; /* Larger headings */
     color: #334155;
+    font-weight: 700;
 }
 .tab-content h3:first-child {
     margin-top: 0;
 }
 .tab-content p {
-    margin-bottom: 16px;
-    line-height: 1.6;
+    margin-bottom: 24px; /* Increased from 16px */
+    line-height: 1.8;   /* Increased from 1.6 */
     color: #475569;
+    font-size: 1.05rem; /* Slightly larger text */
 }
 .tab-content ul, .tab-content ol {
-    margin-bottom: 16px;
-    padding-left: 24px;
+    margin-bottom: 24px;
+    padding-left: 28px;
     color: #475569;
 }
 .tab-content li {
-    margin-bottom: 8px;
+    margin-bottom: 12px; /* Increased from 8px */
+    line-height: 1.7;
+}
+.tab-content strong {
+    color: #1E293B; /* Darker bold text */
 }
 .tab-content pre {
     background: #1E293B;
     color: #E2E8F0;
-    padding: 16px;
-    border-radius: 6px;
+    padding: 20px;
+    border-radius: 8px;
     overflow-x: auto;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    line-height: 1.5;
 }
 .tab-content code {
     font-family: 'Consolas', monospace;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    background-color: #F1F5F9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #0F172A;
+}
+.tab-content pre code {
+    background-color: transparent; /* Reset for pre block */
+    color: inherit;
+    padding: 0;
 }
 
 .content-placeholder {
